@@ -85,7 +85,7 @@ export default function SignUp(){
                     <input type="text" placeholder="Enter Your Password Again Here" id="confirmpassword" onChange={(e)=> setConfirmPassword(e.target.value)}></input>
 
                 <Button className="register" block size="lg" type="submit">
-                    Enter
+                    Sign Up
                 </Button>
 
             </form>
