@@ -26,3 +26,13 @@ const db = mysql.createPool({
   database: "ebdb"
 });
 
+app.post('SignUp', (req, res) => {
+
+  const email = req.body.Email;
+  const username = req.body.Username;
+  const password = req.body.Password;
+  const sqlInsert = "INSERT INTO customer (Customer_Email, Customer_Username, Customer_Pasword) VALUES (?,?,?)";
+  db.query(sqlInsert,[email, username, password], (err, result) =>{
+    console.log(err);
+  });
+});
