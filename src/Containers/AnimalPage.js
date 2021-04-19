@@ -5,10 +5,11 @@ import axios from "axios"
 import "./AnimalPage.css"
 
 
-var animalName = "Elephant"
-var animalDescription = "Big boy"
 
 export default function AnimalPage(){
+    var animalName = "Elephant"
+    var animalDescription = "Big boy"
+
     return(
     <div class = "AnimalPage">
 
@@ -18,8 +19,8 @@ export default function AnimalPage(){
         </div>
 
         <div className = "AnimalCard">
-            <h1>animalName</h1>
-            <p>animalDescription</p>
+            <h1><var>{animalName}</var></h1>
+            <p><var>{animalDescription}</var></p>
         </div>
 
     </div>
