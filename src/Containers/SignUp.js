@@ -3,12 +3,9 @@ import {useHistory} from "react-router-dom"
 import Button from "react-bootstrap/Button"
 import axios from "axios"
 import MainPageNavBar from "./MainPageNavBar"
-import './SignUp.css'
-import { signup } from "../../api/controllers/auth.controller"
-
 
 function register(Email, Username, Password) {
-    return axios.post(signup, {
+    return axios.post(":8080/api/auth/signup", {
         Email,
         Username,
         Password
