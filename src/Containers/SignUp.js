@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button"
 import axios from "axios"
 import MainPageNavBar from "./MainPageNavBar"
 import './SignUp.css'
+import { signup } from "../../api/controllers/auth.controller"
 
 
 function register(Email, Username, Password) {
