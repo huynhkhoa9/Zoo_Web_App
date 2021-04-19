@@ -29,7 +29,7 @@ const db = mysql.createPool({
   database: "ebdb"
 });
 
-/*app.POST("/api/auth/signup" , (req, res) => {
+app.POST("http://zoowebapp-env.eba-p2mxpa2c.us-east-2.elasticbeanstalk.com/api/auth/signup" , (req, res) => {
 
   const email = req.body.Email;
   const username = req.body.Username;
@@ -39,4 +39,3 @@ const db = mysql.createPool({
     console.log(err);
   });
 });
-*/
