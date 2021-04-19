@@ -5,8 +5,12 @@ import axios from "axios"
 import MainPageNavBar from "./MainPageNavBar"
 import './SignUp.css'
 
+const instance = axios.create({baseURL: "http://zoowebapp-env.eba-p2mxpa2c.us-east-2.elasticbeanstalk.com"});
+
+export default instance;
+
 function register(Email, Username, Password) {
-    return axios.post("http://zoowebapp-env.eba-p2mxpa2c.us-east-2.elasticbeanstalk.com/api/auth/signup", {
+    return axios.post("/Signup", {
         Email,
         Username,
         Password
