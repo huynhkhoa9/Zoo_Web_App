@@ -6,7 +6,7 @@ import axios from "axios"
 import MainPageNavBar from "./MainPageNavBar"
 
 function getAnimals(AnimalId, Species, AnimalName, AnimalDOB, AnimalGender, Habitat){
-    return axios.post("http://localhost:8080/api/auth/getAnimals", {
+    return axios.post("/getAnimals", {
         AnimalId, Species, AnimalName, AnimalDOB, AnimalGender, Habitat
     })
     .then(response => {

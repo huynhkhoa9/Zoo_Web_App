@@ -7,7 +7,7 @@ import "./Login.css"
 
 function login(Username, Password){
     return axios
-        .post("http://localhost:8080/api/auth/signin", {
+        .post("http://zoowebapp-env.eba-p2mxpa2c.us-east-2.elasticbeanstalk.com/Login", {
             Username,
             Password
         })
@@ -59,7 +59,7 @@ export default function Login(){
                 <label>Enter Username</label>
                     <input type="text" placeholder="Username" id="username" onChange={(e)=> setUsername(e.target.value)}></input>
                 <label>Enter Password</label>
-                    <input type="text" placeholder="Password" id="password" onChange={(e)=> setPassword(e.target.value)}></input>
+                    <input type="password" placeholder="Password" id="password" onChange={(e)=> setPassword(e.target.value)}></input>
             
                 <Button className="login" block size="lg" type="submit" disabled={!validLength3}>
                     Login
