@@ -3,6 +3,7 @@ const bodyparser = require("body-parser");
 const cors = require("cors");
 const authroutes = require("./routes/auth.routes")
 const mysql = require('mysql')
+
 const app = express();
 
 var corsOptions = {
