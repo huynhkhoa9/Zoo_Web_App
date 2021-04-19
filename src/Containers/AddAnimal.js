@@ -22,7 +22,7 @@ export default function AddAnimal(){
     var Habitat;
 
     var history = useHistory()
-
+    //test 
     //checks if the input is correct
     function validLength(){
         return AnimalId > 0 && AnimalName.length > 0 && AnimalDOB.length === 10 && Species !== "" && AnimalGender !== "";
