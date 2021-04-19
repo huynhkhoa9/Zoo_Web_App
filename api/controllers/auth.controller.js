@@ -12,7 +12,7 @@ const db = mysql.createPool({
   });
 
 exports.signup = (req, res) => {
-   /* let valid = true;
+    let valid = true;
     let encryptedPass = bcrypt.hashSync(req.body.Password, 8);
     let query = "SELECT Customer_Username FROM customer WHERE Customer_Username = '" + req.body.Username + "'"
     let insert = "INSERT INTO customer (Customer_Email, Customer_Username, Customer_Password) VALUES ('" + req.body.Email +"', '" + req.body.Username + "', '" + encryptedPass + "');"
@@ -50,7 +50,7 @@ exports.signup = (req, res) => {
             })
         }
         connection.release();
-    })*/
+    })
 }
 
 exports.signin = (req, res) => {
