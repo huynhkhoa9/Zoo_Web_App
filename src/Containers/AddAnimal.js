@@ -32,19 +32,64 @@ export default function AddAnimal(){
     //checks if the input is valid to submit and sets the habitat of the animal here
     function handleSubmit(event){
         event.preventDefault();
-        if(Species === "Rhinoceros" || "Lion" || "Zebra" || "Giraffe" || "Sloth"){
+        if(Species === "Rhinoceros"){
             Habitat = "African Grasslands";
         }
-        else if(Species === "Wolverine" || "Anteater" || "Bison" || "Beaver" || "Grizzly Bear" || "Prairie dog" || "Bald Eagle"){
+        else if(Species === "Lion"){
+            Habitat = "African Grasslands";
+        }
+        else if(Species === "Zebra"){
+            Habitat = "African Grasslands";
+        }
+        else if(Species ==="Giraffe"){
+            Habitat = "African Grasslands";
+        }
+        else if(Species ==="Sloth"){
+            Habitat = "African Grasslands";
+        }
+        else if(Species === "Wolverine"){
+            Habitat = "American Grasslands";
+        }
+        else if(Species ==="Anteater"){
+            Habitat = "American Grasslands";
+        }
+        else if(Species ==="Bison"){
+            Habitat = "American Grasslands";
+        }
+        else if(Species ==="Beaver"){
+            Habitat = "American Grasslands";
+        }
+        else if(Species ==="Grizzly Bear"){
+            Habitat = "American Grasslands";
+        }
+        else if(Species === "Prairie dog"){
+            Habitat = "American Grasslands";
+        }
+        else if(Species ==="Bald Eagle"){
             Habitat = "American Grasslands";
         }
         else if(Species === "Polar Bear" || "Arctic Fox"){
             Habitat = "Arctic";
         }
-        else if(Species === "Tiger" || "Lemur" || "Red Panda" || "Camel"){
+        else if(Species === "Arctic Fox"){
+            Habitat = "Arctic";
+        }
+        else if(Species === "Tiger"){
             Habitat = "Asian Forest";
         }
-        else if(Species === "Chimpanzee" || "Gorilla"){
+        else if(Species === "Lemur"){
+            Habitat = "Asian Forest";
+        }
+        else if(Species === "Red Panda"){
+            Habitat = "Asian Forest";
+        }
+        else if(Species === "Camel"){
+            Habitat = "Asian Forest";
+        }
+        else if(Species === "Chimpanzee"){
+            Habitat = "Great Apes of Harambee";
+        }
+        else if(Species === "Gorilla"){
             Habitat = "Great Apes of Harambee";
         }
         
