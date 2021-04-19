@@ -12,9 +12,8 @@ app.use(bodyparser.json());
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyparser.urlencoded({ extended: true }));
-app.use("/", authroutes)
 
-app.post("/api/auth/signup", (req, res) => {
+app.post('/signup', (req, res) => {
 
   const email = req.body.Email;
   const username = req.body.Username;

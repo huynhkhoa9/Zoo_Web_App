@@ -6,7 +6,7 @@ import MainPageNavBar from "./MainPageNavBar"
 import './SignUp.css'
 
 function register(Email, Username, Password) {
-    return axios.post("/api/auth/signup", {
+    return axios.post('/signup', {
         Email,
         Username,
         Password
