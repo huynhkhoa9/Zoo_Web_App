@@ -3,6 +3,7 @@ import {useHistory} from "react-router-dom"
 import EmployeeNavBar from "./EmployeeNavBar"
 import "./Animals.css"
 import axios from "axios"
+import MainPageNavBar from "./MainPageNavBar"
 
 function getAnimals(AnimalId, Species, AnimalName, AnimalDOB, AnimalGender, Habitat){
     return axios.post("http://localhost:8080/api/auth/getAnimals", {
@@ -64,7 +65,7 @@ export default function Animals(){
 
     return(
         <div className="Animals">
-            <EmployeeNavBar />
+            <MainPageNavBar />
             <h1>Enter the Animal Information for Report</h1>
             <form class="animals" id="animalsform" onSubmit={handleSubmit6}>
                 <label>Animal Id</label>
