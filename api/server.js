@@ -14,7 +14,7 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use("/", authroutes)
 
-app.post("http://zoowebapp-env.eba-p2mxpa2c.us-east-2.elasticbeanstalk.com/Signup", (req, res) => {
+app.post("/api/auth/signup", (req, res) => {
 
   const email = req.body.Email;
   const username = req.body.Username;
