@@ -6,7 +6,7 @@ import "./EmployeeLogin.css"
 
 function employeelogin(EmployeeID, EmployeePassword){
     return axios
-        .post("http://localhost:8080/api/auth/employeesignin", {
+        .post("/employeelogin", {
             EmployeeID,
             EmployeePassword
         })

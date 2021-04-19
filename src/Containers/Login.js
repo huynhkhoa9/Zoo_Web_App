@@ -7,7 +7,7 @@ import "./Login.css"
 
 function login(Username, Password){
     return axios
-        .post("http://localhost:8080/api/auth/signin", {
+        .post("/login", {
             Username,
             Password
         })

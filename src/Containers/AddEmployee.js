@@ -5,7 +5,7 @@ import "./AddEmployee.css"
 import axios from "axios"
 
 function addemployee(EmployeeFirstName, EmployeeLastName, EmployeeDOB, EmployeeGender, EmployeeSalary, EmployeeDepartment, EmployeeContactInfo, EmployeeSSN, EmployeeSupervisorId, EmployeeId, EmployeePassword){
-    return axios.post("http://localhost:8080/api/auth/addemployee", {
+    return axios.post("/addemployee", {
         EmployeeFirstName, EmployeeLastName, EmployeeDOB, EmployeeGender, EmployeeSalary, EmployeeDepartment, EmployeeContactInfo, EmployeeSSN, EmployeeSupervisorId, EmployeeId, EmployeePassword
     })
     .then(response => {

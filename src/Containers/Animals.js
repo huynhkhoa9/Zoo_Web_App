@@ -5,7 +5,7 @@ import "./Animals.css"
 import axios from "axios"
 
 function getAnimals(AnimalId, Species, AnimalName, AnimalDOB, AnimalGender, Habitat){
-    return axios.post("http://localhost:8080/api/auth/getAnimals", {
+    return axios.post("/getAnimals", {
         AnimalId, Species, AnimalName, AnimalDOB, AnimalGender, Habitat
     })
     .then(response => {
