@@ -13,7 +13,7 @@ app.use(bodyparser.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyparser.urlencoded({ extended: true }));
 
-app.post('/signup', (req, res) => {
+app.post('/SignUp', (req, res) => {
 
   const email = req.body.Email;
   const username = req.body.Username;
