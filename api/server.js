@@ -6,7 +6,7 @@ const mysql = require('mysql')
 const app = express();
 
 var corsOptions = {
-  origin: "http://zoowebapp-env.eba-p2mxpa2c.us-east-2.elasticbeanstalk.com"
+  origin: "http://zoowebapp-env.eba-p2mxpa2c.us-east-2.elasticbeanstalk.com:8080"
 };
 app.use(cors());
 
@@ -15,6 +15,7 @@ app.use(bodyparser.json());
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyparser.urlencoded({ extended: true }));
+app.use("/", authroutes)
 
 // set port, listen for requests
 const PORT = process.env.port || 8080;
