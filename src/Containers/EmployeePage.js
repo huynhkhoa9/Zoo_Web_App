@@ -11,9 +11,9 @@ export default function EmployeePage(){
     var employeeJobDescription = "Zookeeper"
 
     return(
-    <div class = "EmployeePage">
+    <div class = "TheEmployeePage">
 
-        <div className="employeePage">
+        <div className="EmployeePage">
             <MainPageNavBar />
             <h1>Employees</h1>
         </div>

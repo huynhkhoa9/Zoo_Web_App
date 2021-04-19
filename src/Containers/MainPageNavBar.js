@@ -31,7 +31,7 @@ export default function MainPageNavBar(){
     }
 
     const EmployeePageSubmit = (e) =>{
-        history.push("/employeePage");
+        history.push("/EmployeePage");
         window.location.reload();
     }
 

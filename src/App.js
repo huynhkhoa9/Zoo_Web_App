@@ -15,6 +15,7 @@ import EmployeeMain from './Containers/EmployeeMain'
 import AddRevenue from './Containers/AddRevenue'
 import RevenueAdded from './Containers/RevenueAdded'
 import AnimalsPage from './Containers/AnimalPage'
+import EmployeePage from './Containers/EmployeePage'
 
 class App extends Component{
 
@@ -38,6 +39,7 @@ class App extends Component{
             <Route exact path="/EmployeeMain" component={EmployeeMain}></Route>
             <Route exact path="/AddRevenue" component={AddRevenue}></Route>
             <Route exact path="/AnimalsPage" component={AnimalsPage}></Route>
+            <Route exact path="/EmployeePage" component={EmployeePage}></Route>
           </Switch>
       </Router>
     )
