@@ -6,10 +6,10 @@ import MainPageNavBar from "./MainPageNavBar"
 import './SignUp.css'
 
 function register(Email, Username, Password) {
-    return axios.post("http://localhost:8080/api/auth/signup", {
-      Email,
+    return axios.post('/signup', {
+        Email,
         Username,
-      Password
+        Password
     })
     .then(response => {
         return response.data;

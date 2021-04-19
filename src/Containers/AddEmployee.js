@@ -146,7 +146,7 @@ export default function AddEmployee(){
                         <option value="Veterinarian">Veterinarian</option>
                         <option value="Registrar">Registrar</option>
                         <option value="Curator">Curator</option>
-                        <option value="Maintnance">Maintnance</option>
+                        <option value="Maintenance">Maintnance</option>
                         <option value="Marketing">Marketing</option>
                         <option value="Visitor Services">Visitor Services</option>
                         <option value="Janitorial">Janitorial</option>
