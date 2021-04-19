@@ -28,10 +28,10 @@ app.listen(PORT, () => {
 // UNCOMMENT THIS TO TEST QUERYS ON SERVER STARTUP
 let pool = mysql.createPool({
         connectionLimit: 10,
-        host: '99.77.89.225',
-        user: 'root',
-        password: '',
-        database: 'fuel'
+        host: 'zoo-database.chdju4zwao3b.us-east-2.rds.amazonaws.com',
+        user: 'admin',
+        password: 'UHCougarsCS2021$',
+        database: 'ebdb'
 })
 
 pool.getConnection(function(err, connection) {
