@@ -14,6 +14,7 @@ import EmployeeLogin from './Containers/EmployeeLogin'
 import EmployeeMain from './Containers/EmployeeMain'
 import AddRevenue from './Containers/AddRevenue'
 import RevenueAdded from './Containers/RevenueAdded'
+import AnimalsPage from './Containers/AnimalPage'
 
 class App extends Component{
 
