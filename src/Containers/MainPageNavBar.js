@@ -26,7 +26,7 @@ export default function MainPageNavBar(){
     }
 
     const EmployeeLoginSubmit = (e) =>{
-        history.push("/EmployeeLogin");
+        history.push("/EmployeePage");
         window.location.reload();
     }
 

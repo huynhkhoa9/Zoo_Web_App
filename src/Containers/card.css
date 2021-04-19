@@ -1,7 +1,6 @@
 
-.AnimalCard{
+.card{
     width: 500px;
     height: 150px;
     border: 2px solid black;
-
 }
