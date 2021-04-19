@@ -7,9 +7,9 @@ const mysql = require('mysql')
 const app = express();
 
 var corsOptions = {
-  origin: "http://zoowebapp-env.eba-p2mxpa2c.us-east-2.elasticbeanstalk.com:8080"
+  origin: "http://zoowebapp-env.eba-p2mxpa2c.us-east-2.elasticbeanstalk.com"
 };
-app.use(cors(corsOptions));
+app.use(cors());
 
 // parse requests of content-type - application/json
 app.use(bodyparser.json());
