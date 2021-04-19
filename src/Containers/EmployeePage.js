@@ -15,7 +15,7 @@ export default function EmployeePage(){
 
         <div className="employeePage">
             <MainPageNavBar />
-            <h1>Animals in our Zoo</h1>
+            <h1>Employees</h1>
         </div>
 
         <div className = "card">
