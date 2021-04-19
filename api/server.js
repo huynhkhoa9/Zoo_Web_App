@@ -14,6 +14,17 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use("/", authroutes)
 
+app.post("api/signup", (req, res) => {
+
+  const email = req.body.Email;
+  const username = req.body.Username;
+  const password = req.body.Password;
+  const sqlInsert = "INSERT INTO customer (Customer_Email, Customer_Username, Customer_Pasword) VALUES (?,?,?)";
+  db.query(sqlInsert,[email, username, password], (err, result) =>{
+    console.log(err);
+  });
+});
+
 // set port, listen for requests
 const PORT = process.env.port || 8080;
 app.listen(PORT, () => {
