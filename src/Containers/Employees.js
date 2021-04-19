@@ -1,9 +1,9 @@
 import React, {useState} from "react"
 import {useHistory} from "react-router-dom"
 import EmployeeNavBar from "./EmployeeNavBar"
-import "./Employee.css"
+import "./Employees.css"
 import axios from "axios"
-import MainPageNavBar from "./EmployeeNavBar"
+import EmployeeNavBar from "./EmployeeNavBar"
 
 
 export default function Employee(){
