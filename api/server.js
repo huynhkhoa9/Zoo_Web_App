@@ -5,6 +5,9 @@ const authroutes = require("./routes/auth.routes")
 const mysql = require('mysql')
 const app = express();
 
+var corsOptions = {
+  origin: "http://zoowebapp-env.eba-p2mxpa2c.us-east-2.elasticbeanstalk.com"
+};
 app.use(cors());
 
 // parse requests of content-type - application/json
@@ -26,7 +29,7 @@ const db = mysql.createPool({
   database: "ebdb"
 });
 
-app.POST("/api/auth/signup" , (req, res) => {
+/*app.POST("/api/auth/signup" , (req, res) => {
 
   const email = req.body.Email;
   const username = req.body.Username;
@@ -36,3 +39,4 @@ app.POST("/api/auth/signup" , (req, res) => {
     console.log(err);
   });
 });
+*/
