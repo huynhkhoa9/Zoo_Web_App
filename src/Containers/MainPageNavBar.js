@@ -6,7 +6,7 @@ export default function MainPageNavBar(){
     var history = useHistory()
 
     const AnimalsSubmit = (e) =>{
-        history.push("/Animals");
+        history.push("/AnimalsPage");
         window.location.reload();
     }
 
@@ -30,6 +30,11 @@ export default function MainPageNavBar(){
         window.location.reload();
     }
 
+    const EmployeePageSubmit = (e) =>{
+        history.push("/EmployeePage");
+        window.location.reload();
+    }
+
     return(
         <div className="NavBar">
             <header>
@@ -47,6 +52,9 @@ export default function MainPageNavBar(){
                 </Button>
                 <Button className="Employee Login" block size="lg" type="submit" onClick={EmployeeLoginSubmit}>
                     Employee Login
+                </Button>
+                <Button className="Employee Page" block size="lg" type="submit" onClick={EmployeePageSubmit}>
+                    Employee Page
                 </Button>
             </header>
         </div>

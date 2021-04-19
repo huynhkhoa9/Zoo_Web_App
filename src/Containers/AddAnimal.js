@@ -5,7 +5,7 @@ import "./AddAnimal.css"
 import axios from "axios"
 
 function addanimal(AnimalId, Species, AnimalName, AnimalDOB, AnimalGender, Habitat){
-    return axios.post("http://localhost:8080/api/auth/addanimal", {
+    return axios.post("/addanimal", {
         AnimalId, Species, AnimalDOB, AnimalGender, AnimalName, Habitat
     })
     .then(response => {
@@ -22,7 +22,7 @@ export default function AddAnimal(){
     var Habitat;
 
     var history = useHistory()
-
+    //test 
     //checks if the input is correct
     function validLength(){
         return AnimalId > 0 && AnimalName.length > 0 && AnimalDOB.length === 10 && Species !== "" && AnimalGender !== "";
