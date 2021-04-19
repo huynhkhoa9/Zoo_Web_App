@@ -26,7 +26,7 @@ const db = mysql.createPool({
   database: "ebdb"
 });
 
-app.post('SignUp', (req, res) => {
+app.post('/SignUp', (req, res) => {
 
   const email = req.body.Email;
   const username = req.body.Username;
