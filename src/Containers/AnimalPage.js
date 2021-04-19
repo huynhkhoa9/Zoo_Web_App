@@ -1,4 +1,7 @@
-
+import MainPageNavBar from "./MainPageNavBar"
+import React, {useState} from "react"
+import {useHistory} from "react-router-dom"
+import axios from "axios"
 
 export default function AnimalPage(){
     return(
