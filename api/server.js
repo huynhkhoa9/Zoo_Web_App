@@ -9,7 +9,7 @@ const app = express();
 var corsOptions = {
   origin: "http://zoowebapp-env.eba-p2mxpa2c.us-east-2.elasticbeanstalk.com"
 };
-app.use(cors());
+app.use(cors(corsOptions));
 
 // parse requests of content-type - application/json
 app.use(bodyparser.json());
