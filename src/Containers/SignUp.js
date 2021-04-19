@@ -71,7 +71,7 @@ export default function SignUp(){
         <div className="SignUp">
             <MainPageNavBar />
             <h1>Sign Up</h1>
-            <form class="SignupForm" id="signupform" onSubmit={handleSubmit2}>
+            <form className="SignupForm" id="signupform" onSubmit={handleSubmit2}>
                 <label>Enter your Email Address</label>
                     <input type="text" placeholder="Email Address Here" id="email" onChange={(e)=> setEmail(e.target.value)}></input>
 
