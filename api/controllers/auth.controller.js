@@ -8,7 +8,7 @@ const db = mysql.createPool({
     host: "zoo-database.chdju4zwao3b.us-east-2.rds.amazonaws.com",
     user: "admin",
     password: "UHCougarsCS2021$",
-    database: "zoo"
+    database: "ebdb"
   });
 
 exports.signup = (req, res) => {
