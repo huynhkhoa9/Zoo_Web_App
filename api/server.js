@@ -1,5 +1,5 @@
 const express = require("express");
-const body_parser = require("body-parser");
+const bodyparser = require("body-parser");
 const cors = require("cors");
 const authroutes = require("./routes/auth.routes")
 const mysql = require('mysql')
@@ -8,10 +8,10 @@ const app = express();
 app.use(cors());
 
 // parse requests of content-type - application/json
-app.use(body_parser.json());
+app.use(bodyparser.json());
 
 // parse requests of content-type - application/x-www-form-urlencoded
-app.use(body_parser.urlencoded({ extended: true }));
+app.use(bodyparser.urlencoded({ extended: true }));
 app.use("/", authroutes)
 
 // set port, listen for requests
