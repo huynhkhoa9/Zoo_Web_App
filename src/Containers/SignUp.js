@@ -79,10 +79,10 @@ export default function SignUp(){
                     <input type="text" placeholder="Username Here" id="username" onChange={(e)=> setUsername(e.target.value)}></input>
 
                 <label>Enter your Password</label>
-                    <input type="text" placeholder="Password Here" id="password" onChange={(e)=> setPassword(e.target.value)}></input>
+                    <input type="password" placeholder="Password Here" id="password" onChange={(e)=> setPassword(e.target.value)}></input>
 
                 <label>Confirm Password</label>
-                    <input type="text" placeholder="Enter Your Password Again Here" id="confirmpassword" onChange={(e)=> setConfirmPassword(e.target.value)}></input>
+                    <input type="password" placeholder="Enter Your Password Again Here" id="confirmpassword" onChange={(e)=> setConfirmPassword(e.target.value)}></input>
 
                 <Button className="register" block size="lg" type="submit">
                     Sign Up

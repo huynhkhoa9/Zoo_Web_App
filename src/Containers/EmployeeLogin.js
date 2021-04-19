@@ -55,7 +55,7 @@ export default function Login(){
                 <label>Enter Employee Id</label>
                     <input type="text" placeholder="Id" id="employeeid" onChange={(e)=> setEmployeeID(e.target.value)}></input>
                 <label>Enter Password</label>
-                    <input type="text" placeholder="Password" id="password" onChange={(e)=> setEmployeePassword(e.target.value)}></input>
+                    <input type="password" placeholder="Password" id="password" onChange={(e)=> setEmployeePassword(e.target.value)}></input>
             
                 <button type="submit">Login</button>
             </form>
