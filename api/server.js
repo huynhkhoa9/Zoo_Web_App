@@ -3,6 +3,7 @@ const bodyparser = require("body-parser");
 const cors = require("cors");
 const authroutes = require("./routes/auth.routes")
 const mysql = require('mysql')
+
 const app = express();
 
 var corsOptions = {
@@ -30,13 +31,6 @@ const db = mysql.createPool({
   database: "ebdb"
 });
 
-app.POST(":8080/api/auth/signup" , (req, res) => {
-
-  const email = req.body.Email;
-  const username = req.body.Username;
-  const password = req.body.Password;
-  const sqlInsert = "INSERT INTO customer (Customer_Email, Customer_Username, Customer_Pasword) VALUES (?,?,?)";
-  db.query(sqlInsert,[email, username, password], (err, result) =>{
-    console.log(err);
-  });
+app.post(":8080/api/auth/signup" , (req, res) => {
+  console.log("User Registration");
 });
