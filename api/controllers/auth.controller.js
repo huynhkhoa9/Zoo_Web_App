@@ -4,13 +4,12 @@ const mysql = require('mysql')
 var jwt = require("jsonwebtoken")
 var bcrypt = require("bcryptjs")
 
-let pool = mysql.createPool({
-    connectionLimit: 10,
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'zoo'
-})
+const db = mysql.createPool({
+    host: "zoo-database.chdju4zwao3b.us-east-2.rds.amazonaws.com",
+    user: "admin",
+    password: "UHCougarsCS2021$",
+    database: "ebdb"
+  });
 
 exports.signup = (req, res) => {
     let valid = true;
@@ -18,7 +17,7 @@ exports.signup = (req, res) => {
     let query = "SELECT Customer_Username FROM customer WHERE Customer_Username = '" + req.body.Username + "'"
     let insert = "INSERT INTO customer (Customer_Email, Customer_Username, Customer_Password) VALUES ('" + req.body.Email +"', '" + req.body.Username + "', '" + encryptedPass + "');"
 
-    pool.getConnection( async function(err, connection){
+    db.getConnection( async function(err, connection){
         if(err){
             return console.error('error:', + err.message);
         }
