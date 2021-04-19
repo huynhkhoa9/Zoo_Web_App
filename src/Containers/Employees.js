@@ -3,7 +3,6 @@ import {useHistory} from "react-router-dom"
 import EmployeeNavBar from "./EmployeeNavBar"
 import "./Employees.css"
 import axios from "axios"
-import EmployeeNavBar from "./EmployeeNavBar"
 
 
 export default function Employee(){
