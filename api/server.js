@@ -13,17 +13,6 @@ app.use(bodyparser.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyparser.urlencoded({ extended: true }));
 
-app.post('/SignUp', (req, res) => {
-
-  const email = req.body.Email;
-  const username = req.body.Username;
-  const password = req.body.Password;
-  const sqlInsert = "INSERT INTO customer (Customer_Email, Customer_Username, Customer_Pasword) VALUES (?,?,?)";
-  db.query(sqlInsert,[email, username, password], (err, result) =>{
-    console.log(err);
-  });
-});
-
 // set port, listen for requests
 const PORT = process.env.port || 8080;
 app.listen(PORT, () => {
