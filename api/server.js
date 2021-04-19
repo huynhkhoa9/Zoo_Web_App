@@ -14,7 +14,7 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use("/", authroutes)
 
-app.post("api/signup", (req, res) => {
+app.post("/signup", (req, res) => {
 
   const email = req.body.Email;
   const username = req.body.Username;
