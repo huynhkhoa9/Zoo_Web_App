@@ -7,7 +7,7 @@ import "./Login.css"
 
 function login(Username, Password){
     return axios
-        .post("/login", {
+        .post("http://zoowebapp-env.eba-p2mxpa2c.us-east-2.elasticbeanstalk.com/Login", {
             Username,
             Password
         })
