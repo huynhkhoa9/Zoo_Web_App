@@ -26,7 +26,12 @@ export default function MainPageNavBar(){
     }
 
     const EmployeeLoginSubmit = (e) =>{
-        history.push("/EmployeePage");
+        history.push("/EmployeeLogin");
+        window.location.reload();
+    }
+
+    const EmployeePageSubmit = (e) =>{
+        history.push("/employeePage");
         window.location.reload();
     }
 
@@ -47,6 +52,9 @@ export default function MainPageNavBar(){
                 </Button>
                 <Button className="Employee Login" block size="lg" type="submit" onClick={EmployeeLoginSubmit}>
                     Employee Login
+                </Button>
+                <Button className="Employee Page" block size="lg" type="submit" onClick={EmployeePageSubmit}>
+                    Employee Page
                 </Button>
             </header>
         </div>
