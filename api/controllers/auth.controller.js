@@ -12,6 +12,9 @@ const db = mysql.createPool({
   });
 
 exports.signup = (req, res) => {
+
+    console.log("Registration Reached");
+
     let valid = true;
     let encryptedPass = bcrypt.hashSync(req.body.Password, 8);
     let query = "SELECT Customer_Username FROM customer WHERE Customer_Username = '" + req.body.Username + "'"
