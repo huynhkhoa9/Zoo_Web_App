@@ -18,12 +18,6 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use("/", authroutes)
 
-// set port, listen for requests
-const PORT = process.env.port || 8080;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}.`);
-});
-
 const db = mysql.createPool({
   host: "zoo-database.chdju4zwao3b.us-east-2.rds.amazonaws.com",
   user: "admin",
@@ -31,6 +25,12 @@ const db = mysql.createPool({
   database: "ebdb"
 });
 
-app.post(":8080/api/auth/signup" , (req, res) => {
+app.post('http://zoowebapp-env.eba-p2mxpa2c.us-east-2.elasticbeanstalk.com:8080/api/auth/signup' , (req, res) => {
   console.log("User Registration");
+});
+
+// set port, listen for requests
+const PORT = process.env.port || 8080;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
 });
