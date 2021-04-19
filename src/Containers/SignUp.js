@@ -6,7 +6,7 @@ import MainPageNavBar from "./MainPageNavBar"
 import './SignUp.css'
 
 function register(Email, Username, Password) {
-    return axios.post("http://localhost:8080/api/auth/signup", {
+    return axios.post("/SignUp", {
         Email,
         Username,
         Password
@@ -45,7 +45,7 @@ export default function SignUp(){
                         error.message ||
                         error.toString()
     
-                    //alert(resMessage);
+                    alert(resMessage);
                 })
         }
         else{
