@@ -1,5 +1,5 @@
 const express = require("express");
-const bodyparser = require("body-parser");
+const bodyParser = require("body-parser");
 const cors = require("cors");
 const authroutes = require("./routes/auth.routes")
 const mysql = require('mysql')
@@ -7,20 +7,20 @@ const mysql = require('mysql')
 const app = express();
 
 var corsOptions = {
-  origin: "http://zoowebapp-env.eba-p2mxpa2c.us-east-2.elasticbeanstalk.com"
+  origin: "http://localhost:8081"
 };
-app.use(cors(corsOptions));
+
+app.use(cors());
 
 // parse requests of content-type - application/json
-app.use(bodyparser.json());
+app.use(bodyParser.json());
 
 // parse requests of content-type - application/x-www-form-urlencoded
-app.use(bodyparser.urlencoded({ extended: true }));
-app.use("/", authroutes)
-
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use("post/", authroutes)
 
 // set port, listen for requests
-const PORT = process.env.port || 8080;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
