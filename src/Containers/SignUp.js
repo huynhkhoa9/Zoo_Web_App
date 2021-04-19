@@ -45,7 +45,7 @@ export default function SignUp(){
                         error.message ||
                         error.toString()
     
-                    //alert(resMessage)
+                    //alert(resMessage);
                 })
         }
         else{
@@ -87,12 +87,7 @@ export default function SignUp(){
                 <Button className="register" block size="lg" type="submit">
                     Sign Up
                 </Button>
-
             </form>
-            <script>
-
-            </script>
-
         </div>
     )
 }
