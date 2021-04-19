@@ -19,8 +19,8 @@ export default function AnimalPage(){
         </div>
 
         <div className = "AnimalCard">
-            <h1>{val.animalName}</h1>
-            <p>{val.animalDescription}</p>
+            <h1><var>{animalName}</var></h1>
+            <p><var>{animalDescription}</var></p>
         </div>
 
     </div>
