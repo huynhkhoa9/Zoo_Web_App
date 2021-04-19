@@ -36,6 +36,7 @@ class App extends Component{
             <Route exact path="/EmployeeLogin" component={EmployeeLogin}></Route>
             <Route exact path="/EmployeeMain" component={EmployeeMain}></Route>
             <Route exact path="/AddRevenue" component={AddRevenue}></Route>
+            <Route exact path="/AnimalsPage" component={AnimalsPage}></Route>
           </Switch>
       </Router>
     )

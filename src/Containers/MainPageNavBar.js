@@ -6,7 +6,7 @@ export default function MainPageNavBar(){
     var history = useHistory()
 
     const AnimalsSubmit = (e) =>{
-        history.push("/Animals");
+        history.push("/AnimalsPage");
         window.location.reload();
     }
 
