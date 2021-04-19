@@ -45,7 +45,7 @@ export default function SignUp(){
                         error.message ||
                         error.toString()
     
-                    //alert(error.response.data.message)
+                    //alert(resMessage)
                 })
         }
         else{
