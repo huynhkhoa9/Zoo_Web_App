@@ -26,7 +26,7 @@ const db = mysql.createPool({
   database: "ebdb"
 });
 
-app.POST("./SignUp" , (req, res) => {
+app.POST("/api/auth/signup" , (req, res) => {
 
   const email = req.body.Email;
   const username = req.body.Username;
