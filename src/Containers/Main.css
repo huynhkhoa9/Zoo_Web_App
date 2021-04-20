@@ -25,3 +25,11 @@ body{
     margin-right: 10px;
     margin-left: 10px;
   }
+
+  button{
+    background-color:#82ab8d; /* Green background */
+    color: white;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+  }
