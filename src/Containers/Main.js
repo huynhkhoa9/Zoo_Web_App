@@ -10,7 +10,7 @@ export default function Main(){
       </head>
       
       <body>
-            
+            <MainPageNavBar />
             <h1>Welcome to the Group 14 Zoo</h1>
        </body>
         </div>
