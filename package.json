@@ -38,6 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "http://zoowebapp-env.eba-p2mxpa2c.us-east-2.elasticbeanstalk.com:8080"
+  }
 }
