@@ -19,7 +19,7 @@ export default function EmployeePage(){
         </div>
 
         <div className = "card">
-            <h1><var>{employeeName}</var></h1>
+            <h2><var>{employeeName}</var></h2>
             <p><var>{employeeJobDescription}</var></p>
         </div>
 

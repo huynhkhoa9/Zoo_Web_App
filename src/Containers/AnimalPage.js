@@ -19,7 +19,7 @@ export default function AnimalPage(){
         </div>
 
         <div className = "card">
-            <h1><var>{animalName}</var></h1>
+            <h2><var>{animalName}</var></h2>
             <p><var>{animalDescription}</var></p>
         </div>
 

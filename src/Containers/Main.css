@@ -3,8 +3,21 @@ body{
   }
   
   h1{
-    font-size:40px;
+    font-size:80px;
     color:#2d5938;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+  }
+
+  h2{
+    font-size:40px;
+    color:#88c296;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+  }
+
+  p{
+    font-size:25px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
   }
