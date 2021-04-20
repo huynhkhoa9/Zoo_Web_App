@@ -68,7 +68,7 @@ export default function AddAnimal(){
         else if(Species ==="Bald Eagle"){
             Habitat = "American Grasslands";
         }
-        else if(Species === "Polar Bear" || "Arctic Fox"){
+        else if(Species === "Polar Bear"){
             Habitat = "Arctic";
         }
         else if(Species === "Arctic Fox"){
