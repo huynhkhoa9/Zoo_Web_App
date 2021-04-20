@@ -6,7 +6,7 @@ export default function Main(){
   
         <div className="Main">
       <head>
-      <link rel="stylesheet" href="mystyle.css"></link>
+      <link rel="stylesheet" href="Main.css"></link>
       </head>
       <body>
             <MainPageNavBar />
