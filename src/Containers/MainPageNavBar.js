@@ -38,6 +38,7 @@ export default function MainPageNavBar(){
             <link rel="preconnect" href="https://fonts.gstatic.com"></link>
             <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"></link>
 
+            <div class = "btn-group">
                 <Button className="Customer Login" block size="lg" type="submit" onClick={CustomerLoginSubmit}>
                     Login
                 </Button>
@@ -53,6 +54,8 @@ export default function MainPageNavBar(){
                 <Button className="Employee Login" block size="lg" type="submit" onClick={EmployeeLoginSubmit}>
                     Employee Login
                 </Button>
+            </div>
+
             </header>
         </div>
     )
