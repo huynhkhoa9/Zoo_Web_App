@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use("/api/auth/signup", authroutes)
+app.use("/", authroutes)
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
