@@ -63,7 +63,7 @@ export default function Login(){
                     <input type="password" placeholder="Password" id="password" onChange={(e)=> setEmployeePassword(e.target.value)}></input>
                 </div>
 
-                <Button type="submit" block size="lg" type="submit">Login</Button>
+                <Button className="submit" block size="lg" type="submit">Login</Button>
             </form>
         </div>
     )
