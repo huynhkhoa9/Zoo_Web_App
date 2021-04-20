@@ -73,18 +73,26 @@ export default function SignUp(){
             <MainPageNavBar />
             <h1>Sign Up</h1>
             <form className="SignupForm" id="signupform" onSubmit={handleSubmit2}>
+                <div>
                 <label>Enter your Email Address</label>
                     <input type="text" placeholder="Email Address Here" id="email" onChange={(e)=> setEmail(e.target.value)}></input>
+                </div>
 
+                <div>
                 <label>Enter your Username</label>
                     <input type="text" placeholder="Username Here" id="username" onChange={(e)=> setUsername(e.target.value)}></input>
+                </div>
 
+                <div>
                 <label>Enter your Password</label>
                     <input type="password" placeholder="Password Here" id="password" onChange={(e)=> setPassword(e.target.value)}></input>
+                </div>
 
+                <div>
                 <label>Confirm Password</label>
                     <input type="password" placeholder="Enter Your Password Again Here" id="confirmpassword" onChange={(e)=> setConfirmPassword(e.target.value)}></input>
-
+                </div>
+                
                 <Button className="register" block size="lg" type="submit">
                     Sign Up
                 </Button>
