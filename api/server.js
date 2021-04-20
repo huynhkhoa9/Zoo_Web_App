@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/", authroutes)
 
 app.get("/", () =>{
-  app.send("Welcome to the Homepage1");
+ console.log("Welcome to the Homepage1");
 })
 
 // set port, listen for requests
