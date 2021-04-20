@@ -4,6 +4,8 @@ import Button from "react-bootstrap/Button"
 import axios from "axios"
 import MainPageNavBar from "./MainPageNavBar"
 
+
+
 function register(Email, Username, Password) {
     return axios.post("http://zoowebapp-env.eba-p2mxpa2c.us-east-2.elasticbeanstalk.com:8080/api/auth/signup", {
         Email,

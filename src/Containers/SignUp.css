@@ -1,3 +1,5 @@
-.SignUp {
-    display: inline-block;
-}
+@media all and (min-width: 480px){
+    .Login h2 {
+      text-align:center
+    }
+  }
