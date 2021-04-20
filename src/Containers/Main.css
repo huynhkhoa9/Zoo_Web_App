@@ -3,7 +3,8 @@ body{
   }
   
   h1{
-    color:red;
+    font-size:40px;
+    color:#2d5938;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
   }
